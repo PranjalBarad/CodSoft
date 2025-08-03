@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPPEE - Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>KOPPEE</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Pages <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to KOPPEE</h1>
+            <p>Experience the finest coffee since 1950</p>
+            <button class="cta-button">Explore Menu</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Premium Coffee</h3>
+                    <p>Freshly roasted beans from around the world</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Fresh Pastries</h3>
+                    <p>Baked daily with the finest ingredients</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Free WiFi</h3>
+                    <p>Stay connected while you enjoy your coffee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=300&fit=crop" alt="Coffee">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold coffee shot</p>
+                    <span class="price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&h=300&fit=crop" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>Smooth espresso with steamed milk</p>
+                    <span class="price">$4.25</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=300&h=300&fit=crop" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Perfect balance of espresso and foam</p>
+                    <span class="price">$4.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GET IN TOUCH</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                <p><i class="fas fa-phone"></i> +012 345 67890</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>OPEN HOURS</h3>
+                <p><strong>MONDAY - FRIDAY</strong></p>
+                <p>8.00 AM - 8.00 PM</p>
+                <p><strong>SATURDAY - SUNDAY</strong></p>
+                <p>2.00 PM - 8.00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>NEWSLETTER</h3>
+                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your Email" id="newsletter-email">
+                    <button type="button" onclick="subscribeNewsletter()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Domain. All Rights Reserved.</p>
+            <p>Designed by <a href="#">HTML Codex</a> Distributed by <a href="#">ThemeWagon</a></p>
+        </div>
+        <button class="scroll-top" onclick="scrollToTop()">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
